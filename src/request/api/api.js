@@ -2,13 +2,16 @@
 import api from '../index';
 // 引入URL
 import { URL } from '../requestUrl';
-const { loginUrl, userUrl,getBasketballData } = URL
-
+const { loginUrl, userUrl,getBasketballData,getStudyData,getClassData,getCharacterData,getCarData } = URL
 //下面是简写的形式
 // getXXX 自定义的接口名字
 export const goLogin = (params) => api.get(`${loginUrl}`, params);
 export const getUser = (data) => api.post(`${userUrl}`, data);
 export const basketballData = (data) => api.post(`${getBasketballData}`, data);
+export const studyData = (data) => api.post(`${getStudyData}`, data);
+export const classData = (data) => api.post(`${getClassData}`, data);
+export const characterData = (data) => api.post(`${getCharacterData}`, data);
+export const carData = (data) => api.post(`${getCarData}`, data);
 
 
 // 下面是详细的写法

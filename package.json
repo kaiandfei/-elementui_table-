@@ -15,9 +15,17 @@
     "axios": "^1.4.0",
     "core-js": "^3.8.3",
     "element-ui": "^2.15.13",
+    "html2canvas": "^1.4.1",
     "qs": "^6.11.2",
+    "screenfull": "^6.0.2",
+    "splitpanes": "^2.4.1",
+    "videojs-flash": "^2.2.1",
     "vue": "^2.6.14",
+    "vue-drag-resize": "^1.5.4",
+    "vue-grid-layout": "^2.4.0",
     "vue-router": "^3.5.1",
+    "vue-video-player": "^6.0.0",
+    "vuedraggable": "^2.24.3",
     "vuex": "^3.6.2"
   },
   "devDependencies": {
@@ -31,8 +39,10 @@
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "mockjs": "^1.1.0",
+    "recordrtc": "^5.6.2",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
+    "vue-i18n": "^8.28.2",
     "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {

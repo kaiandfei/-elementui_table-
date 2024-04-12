@@ -8,7 +8,7 @@
       @selection-change="handleSelectionChange"
       @sort-change="sortChange"
     >
-      <el-table-column v-if="index" type="index" width="50"> </el-table-column>
+      <el-table-column v-if="index" type="index" width="50" align="center"> </el-table-column>
       <el-table-column v-if="selection" type="selection" width="55">
       </el-table-column>
       <el-table-column
@@ -20,6 +20,8 @@
         :prop="item.prop"
         :label="item.label"
         :width="item.width"
+        show-overflow-tooltip
+        :align="item.align"
       >
         <template slot-scope="scope">
           <slot
@@ -84,6 +86,7 @@ export default {
         throw new Error(error);
       }
     },
+  
     handleSelectionChange(_val) {
       this.$emit("update:checkList", _val);
       console.log(_val);
